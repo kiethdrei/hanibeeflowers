@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HaniBee</title>
   
@@ -38,44 +39,32 @@
 		<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
-			  <div class="modal-header">
-				<h5 class="modal-title" id="imageModalLabel">Jordan AJKO 1 Low 'White and Black'</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			  </div>
 			  <div class="modal-body">
-				<img src="img/p3.png" alt="shoes" id="modalImage" class="img-fluid">
+				<img src="img/3.png" alt="crochet flowers" id="modalImage" class="img-fluid">
 			  </div>
 			</div>
 		  </div>
 		</div>
 
 		<!-- Image -->
-		<img src="img/p3.png" alt="shoes" id="p3Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+		<img src="img/3.png" class="rounded" alt="crochet flowers" id="p1Image" data-bs-toggle="modal" data-bs-target="#imageModal" style="height:650px, width:400px">
       </div>
       <div class="product-info">
-        <h1>Jordan AJKO 1 Low 'White and Black'</h1>
+        <h1>Teddy's Sunshine Bouquet</h1>
         <p>
-          Inspired by the original that debuted in 1985, the Air Jordan 1 Low offers a clean, classic look that's familiar yet always fresh. With an iconic design that pairs perfectly with any 'fit, these kicks ensure you'll always be on point.
+         A vibrant and cheerful bouquet featuring a delightful mix of colorful flowers, carefully arranged to create a stunning display. With a sweet teddy bear nestled at its center, this bouquet is sure to bring a smile to anyone's face, spreading joy and warmth like a ray of sunshine.
         </p>
         <h2>Price:</h2>
-        <p class="price">$120.00</p>
-        <h2>Colorway:</h2>
-        <p class="colorway">WHITE/BLACK-WHITE</p>
-        <h2>Sizes:</h2>
-      <div class="sizes">
-		  <div class="size-option" data-size="7">7</div>
-		  <div class="size-option" data-size="7.5">7.5</div>
-		  <div class="size-option" data-size="8">8</div>
-		  <div class="size-option" data-size="8.5">8.5</div>
-		  <div class="size-option" data-size="9">9</div>
-		  <div class="size-option" data-size="9.5">9.5</div>
-		  <div class="size-option" data-size="10">10</div>
-		  <div class="size-option" data-size="10.5">10.5</div>
-		  <div class="size-option" data-size="11">11</div>
-		  <div class="size-option" data-size="11.5">11.5</div>
-		  <div class="size-option" data-size="12">12</div>
-		  <div class="size-option" data-size="13">13</div>
+        <p class="price">PHP 120.00</p>
+        <h2>Quantity:</h2>
+      <div class="quantity">
+		<form action="/action_page.php">
+		  <label for="quantity"></label>
+		  <input type="number" id="quantity" name="quantity" min="1" max="1000" value="1">
+		</form>
 	  </div>
+
+</br>
 
 
 <div class="alert alert-success alert-dismissible fade show" id="successAlert" style="display: none;">
@@ -111,6 +100,7 @@
       </div>
       <div class="clearfix"></div>
     </div>
+	
 	
 	    <!-- footer section -->
     <footer class=" footer_section">

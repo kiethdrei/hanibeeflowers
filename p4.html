@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HaniBee</title>
   
@@ -17,7 +18,7 @@
   <body>
 
   	<header class="header">
-		<h1 class="logo"><a href="#"></a></h1>
+		<h1 class="logo"><a href="index.html"></a></h1>
 		<div class="logotext">
 		<h2>HaniBee</h2>
 		</div>
@@ -38,34 +39,32 @@
 		<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
-			  <div class="modal-header">
-				<h5 class="modal-title" id="imageModalLabel">Wmns Air Jordan 4 Retro 'Metallic Gold'</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			  </div>
 			  <div class="modal-body">
-				<img src="img/p4.png" alt="shoes" id="modalImage" class="img-fluid">
+				<img src="img/4.png" alt="crochet flowers" id="modalImage" class="img-fluid">
 			  </div>
 			</div>
 		  </div>
 		</div>
 
 		<!-- Image -->
-		<img src="img/p4.png" alt="shoes" id="p1Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+		<img src="img/4.png" class="rounded" alt="crochet flowers" id="p1Image" data-bs-toggle="modal" data-bs-target="#imageModal" style="height:650px, width:400px">
       </div>
       <div class="product-info">
-        <h1>Wmns Air Jordan 4 Retro 'Metallic Gold'</h1>
+        <h1>Tulip Trendsetter</h1>
         <p>
-          The AJ4 delivers responsive cushioning, with a heel Air-Sole unit bringing the street-ready comfort. Leather on the upper offers a premium look and heritage style. Whether you're wearing 'em at dusk or dawn, this design from '89 is the perfect off-court flex.
+         A stylish and modern flower bouquet, featuring an elegant arrangement of tulips. This chic and fashionable floral design showcases an array of stunning tulips, carefully curated to create a visually appealing and harmonious composition. The vibrant colors of the tulips add a touch of sophistication and class to the bouquet. With the added charm of colorful knitted items, the Tulip Trendsetter bouquet becomes an extraordinary and memorable centerpiece, perfect for any occasion.
         </p>
         <h2>Price:</h2>
-        <p class="price">$100.00</p>
-        <h2>Colorway:</h2>
-        <p class="colorway">SAIL/METALLIC GOLD-BLACK</p>
-        <h2>Sizes:</h2>
-      <div class="sizes">
-		  <div class="size-option" data-size="W.5">W 5</div>
-		  <div class="size-option" data-size="W.5.5">W 5.5</div>
+        <p class="price">PHP 100.00</p>
+        <h2>Quantity:</h2>
+      <div class="quantity">
+		<form action="/action_page.php">
+		  <label for="quantity"></label>
+		  <input type="number" id="quantity" name="quantity" min="1" max="1000" value="1">
+		</form>
 	  </div>
+
+</br>
 
 
 <div class="alert alert-success alert-dismissible fade show" id="successAlert" style="display: none;">
@@ -101,6 +100,7 @@
       </div>
       <div class="clearfix"></div>
     </div>
+	
 	
 	    <!-- footer section -->
     <footer class=" footer_section">

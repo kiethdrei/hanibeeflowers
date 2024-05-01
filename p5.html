@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HaniBee</title>
   
@@ -17,7 +18,7 @@
   <body>
 
   	<header class="header">
-		<h1 class="logo"><a href="#"></a></h1>
+		<h1 class="logo"><a href="index.html"></a></h1>
 		<div class="logotext">
 		<h2>HaniBee</h2>
 		</div>
@@ -38,44 +39,32 @@
 		<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
-			  <div class="modal-header">
-				<h5 class="modal-title" id="imageModalLabel">Nike Ja 1 EP 'Coconut Milk'</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			  </div>
 			  <div class="modal-body">
-				<img src="img/p5.png" alt="shoes" id="modalImage" class="img-fluid">
+				<img src="img/5.png" alt="crochet flowers" id="modalImage" class="img-fluid">
 			  </div>
 			</div>
 		  </div>
 		</div>
 
 		<!-- Image -->
-		<img src="img/p5.png" alt="shoes" id="p1Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+		<img src="img/5.png" class="rounded" alt="crochet flowers" id="p1Image" data-bs-toggle="modal" data-bs-target="#imageModal" style="height:650px, width:400px">
       </div>
       <div class="product-info">
-        <h1>Nike Ja 1 EP 'Coconut Milk'</h1>
+        <h1>Petals and Knitted Wonders</h1>
         <p>
-          Ja Morant became the superstar he is today by repeatedly sinking jumpers on crooked rims, jumping on tractor tires and dribbling through traffic cones in steamy South Carolina summers. The Ja 1 is a testament to his rise. With Zoom Air, it supports bunny hops and hyper speed without sacrificing comfort, so that you can control your own destiny on the court. This special design nods to a tasty snack that led to Ja's discovery and the fire that burns in his stomach to keep proving the haters wrong.
+         The bouquet showcases a stunning and visually appealing composition of a flower bouquet, adorned with a variety of colorful knitted items. The beautiful bouquet features a delightful arrangement of flowers, which appear to include an assortment of bright and fresh blossoms. The knitted items, featuring a range of vibrant colors and intricate patterns, add a unique and whimsical touch to the overall design. This harmonious blend of natural beauty and handmade artistry creates a charming and engaging visual experience, making the bouquet a true delight to behold.
         </p>
         <h2>Price:</h2>
-        <p class="price">$150.00</p>
-        <h2>Colorway:</h2>
-        <p class="colorway">COCONUT MILK/COCONUT MILK-KHAKI-BLACK</p>
-        <h2>Sizes:</h2>
-      <div class="sizes">
-		  <div class="size-option" data-size="7">7</div>
-		  <div class="size-option" data-size="7.5">7.5</div>
-		  <div class="size-option" data-size="8">8</div>
-		  <div class="size-option" data-size="8.5">8.5</div>
-		  <div class="size-option" data-size="9">9</div>
-		  <div class="size-option" data-size="9.5">9.5</div>
-		  <div class="size-option" data-size="10">10</div>
-		  <div class="size-option" data-size="10.5">10.5</div>
-		  <div class="size-option" data-size="11">11</div>
-		  <div class="size-option" data-size="11.5">11.5</div>
-		  <div class="size-option" data-size="12">12</div>
-		  <div class="size-option" data-size="13">13</div>
+        <p class="price">PHP 250.00</p>
+        <h2>Quantity:</h2>
+      <div class="quantity">
+		<form action="/action_page.php">
+		  <label for="quantity"></label>
+		  <input type="number" id="quantity" name="quantity" min="1" max="1000" value="1">
+		</form>
 	  </div>
+
+</br>
 
 
 <div class="alert alert-success alert-dismissible fade show" id="successAlert" style="display: none;">
@@ -112,7 +101,8 @@
       <div class="clearfix"></div>
     </div>
 	
-		    <!-- footer section -->
+	
+	    <!-- footer section -->
     <footer class=" footer_section">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By

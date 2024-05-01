@@ -21,7 +21,7 @@ a {
 
 .logo {
   padding-left: 100px;
-  width: 200px;
+  width: 400px;
   height: auto; /* maintain aspect ratio */
 }
 
@@ -35,10 +35,8 @@ a {
 }
 
 .logo img {
-  height: auto;
-  max-width: 100%;
-  width: 300px; /* Set the width to the desired size */
-  height: 400px; /* Set the height to the desired size */
+  width: 100px; /* Set the width to the desired size */
+  height: 200px; /* Set the height to the desired size */
 }
 
 .main-nav {
@@ -69,7 +67,7 @@ a {
 	padding-top: 0.05px;
 	padding-bottom: 2px;
 	border: 1px solid #a2a2a2;
-	background-color: #27374D !important;
+	background-color: #A87676 !important;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
@@ -80,7 +78,7 @@ a {
 
 @font-face { font-family: NostalgicRemain; src: url('../fonts/NostalgicRemain.ttf'); }
 @font-face { font-family: StoryLens; src: url('../fonts/storylens.otf'); }
-@font-face { font-family: NaturalRough; src: url('../fonts/naturalrough.otf'); }
+@font-face { font-family: LettersForLearners; src: url('../fonts/LettersForLearners.ttf'); }
 @font-face { font-family: PaperNotes; src: url('../fonts/papernotes.otf'); }
 @font-face { font-family: TheStudentsTeacher; src: url('../fonts/TheStudentsTeacher.ttf'); }
 
@@ -211,10 +209,11 @@ color: #ffff;
 
 
 .shop_section .box {
-  background-color: #eeeeee;
+  background-color: #F8C8DC;
   position: relative;
   padding: 10px;
   margin-top: 25px;
+  border-radius: 25px;
 }
 
 .shop_section .box a {
@@ -248,6 +247,10 @@ color: #ffff;
       -ms-flex-pack: justify;
           justify-content: space-between;
 		  text-decoration:none;
+}
+
+.shop_section.box.detail-box h6,.shop_section.box.detail-box span {
+  color: #ffffff;
 }
 
 .shop_section .box .detail-box h6 span {
@@ -308,7 +311,7 @@ color: #ffff;
   	padding-top: 5px;
 	padding-bottom: 2px;
 	border: 1px solid #a2a2a2;
-	background-color: #27374D !important;
+	background-color: #A87676 !important;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
@@ -351,7 +354,7 @@ color: #ffff;
 .aboutus h1 {
  margin-top: 30px;
  text-align: center;
- font-family:NaturalRough;
+ font-family:PaperNotes;
 }
 
 .aboutus p {
@@ -403,3 +406,5 @@ hr.rounded {
 .listbranch ul{
 	text-align: center;
 }
+
+/* Nav Responsive */
