@@ -135,17 +135,6 @@ color: #ffff;
         margin-top: 1rem;
         width: 100%;
       }
-      .size-option {
-        margin: 0.25rem;
-        padding: 0.25rem;
-        border: 1px solid #ddd;
-        cursor: pointer;
-        width: calc(20% - 0.5rem);
-      }
-      .size-option:hover {
-        background-color: #ddd;
-      }
-	  
 	  
       .add-to-cart {
         display: block;
