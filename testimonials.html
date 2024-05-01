@@ -35,47 +35,125 @@
       </ul>
 	</header> 
 	
-	<div class="container">
-	  <img src="img/people.jpg" alt="Avatar" style="width:90px">
-	  <p><span>John Doe</span> Shopper</p>
-	  <p>"I recently visited the HaniBee and was impressed with the wide selection of shoes available. The staff was friendly and helpful, and I was able to find the perfect pair of shoes for my needs. I would definitely recommend this salon to anyone looking for a great selection of shoes."</p>
-	</div>
+	<div class="row">
+  <div class="column">
+    <img src="img/testimonial1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/testimonial2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/testimonial3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/testimonial4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+    <div class="column">
+    <img src="img/testimonial5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+    <div class="column">
+    <img src="img/testimonial6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+    <div class="column">
+    <img src="img/testimonial7.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+    <div class="column">
+    <img src="img/testimonial8.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+</div>
 
-	<div class="container">
-	  <img src="img/people.jpg" alt="Avatar" style="width:90px">
-	  <p><span>Rebecca Flex</span> Shopper</p>
-	  <p> "I had a great experience at the HaniBee. The staff was knowledgeable and helped me find the perfect pair of shoes for my upcoming event. I was also impressed with the cleanliness of the store and the overall atmosphere. I will definitely be back for my next shoe purchase."</p>
-	</div>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="img/testimonial1.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="img/testimonial2.jpg" style="width:30%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="img/testimonial3.jpg" style="width:30%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="img/testimonial4.jpg" style="width:30%">
+    </div>
+    
+	<div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="img/testimonial5.jpg" style="width:30%">
+    </div>
 	
-	<div class="container">
-	  <img src="img/people.jpg" alt="Avatar" style="width:90px">
-	  <p><span>Bob Johnson</span> Shopper</p>
-	  <p>I was pleasantly surprised by the quality of shoes available at the salon. The prices were reasonable, and the staff was very helpful in finding the right size and style for me. I would highly recommend this salon to anyone looking for a great selection of shoes at a fair price."</p>
-	</div>
+	<div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="img/testimonial6.jpg" style="width:30%">
+    </div>
 	
-	<div class="container">
-	  <img src="img/people.jpg" alt="Avatar" style="width:90px">
-	  <p><span>Sarah Lee</span> Shopper</p>
-	  <p> "I had a wonderful experience at the HaniBee. The staff was very friendly and attentive, and they helped me find the perfect pair of shoes for my needs. I was also impressed with the cleanliness of the store and the overall atmosphere. I will definitely be back for my next shoe purchase."</p>
-	</div>
+	<div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="img/testimonial7.jpg" style="width:30%">
+    </div>
 	
-	<div class="container">
-	  <img src="img/people.jpg" alt="Avatar" style="width:90px">
-	  <p><span>Tom Brown</span> Shopper</p>
-	  <p>"I recently visited the HaniBee and was impressed with the wide selection of shoes available. The staff was friendly and helpful, and I was able to find the perfect pair of shoes for my needs. I would definitely recommend this salon to anyone looking for a great selection of shoes."</p>
-	</div>
+	<div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="img/testimonial8.jpg" style="width:30%">
+    </div>
 	
-	<div class="container">
-	  <img src="img/people.jpg" alt="Avatar" style="width:90px">
-	  <p><span>Lisa Green</span> Shopper</p>
-	  <p>"I had a great experience at the HaniBee. The staff was knowledgeable and helped me find the perfect pair of shoes for my upcoming event. I was also impressed with the cleanliness of the store and the overall atmosphere. I will definitely be back for my next shoe purchase."</p>
-	</div>
-	
-	<div class="container">
-	  <img src="img/people.jpg" alt="Avatar" style="width:90px">
-	  <p><span>Mike Ross</span> Shopper</p>
-	  <p> "I was pleasantly surprised by the quality of shoes available at the salon. The prices were reasonable, and the staff was very helpful in finding the right size and style for me. I would highly recommend this salon to anyone looking for a great selection of shoes at a fair price."</p>
-	</div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 
 	    <!-- footer section -->
     <footer class=" footer_section">
